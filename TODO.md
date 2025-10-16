@@ -1,0 +1,2 @@
+- [x] Modify src/components/ui/PricingCard.jsx to add responsive left and right margins (1rem each) on mobile screens (max-width: 768px), and set margins to 0 on larger screens.
+- [x] Fix AnimatePresence in PricingSection.jsx to prevent affecting the background, by adding mode="popLayout".
