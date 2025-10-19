@@ -15,17 +15,18 @@ export default function PortfolioSection() {
     { image: "/UMKN/umkm7.png", title: "Website Barber Shop" },
     { image: "/UMKN/umkm8.png", title: "Website Brand F&B" },
     { image: "/UMKN/umkm9.png", title: "Website Brand Store Handphone" },
+    { image: "/SERVICE/clotingandaccessoris.png", title: "Clothing Store Website" },
     { image: "/UMKN/umkm10.png", title: "Website Coffee Shop" },
     { image: "/UMKN/umkm11.png", title: "Website Aksesoris Kamera" },
-    { image: "/SERVICE/cloting.webp", title: "Clothing Store Website" },
     { image: "/SERVICE/compro.png", title: "Company Profile Website" },
+    { image: "/SERVICE/interior.png", title: "Furniture Store Website" },
     { image: "/SERVICE/ecomerce.png", title: "E-Commerce Website" },
     { image: "/SERVICE/ERPSimple.png", title: "ERP System" },
     { image: "/SERVICE/F&BMenuQR.png", title: "F&B Digital Menu" },
-    { image: "/SERVICE/kursusskateboard.webp", title: "Skateboard Course Website" },
     { image: "/SERVICE/personalbrand.png", title: "Personal Branding Website" },
-    { image: "/SERVICE/tokoperabotandanfurniture.webp", title: "Furniture Store Website" },
     { image: "/SERVICE/travel.png", title: "Travel Agency Website" },
+    { image: "/SERVICE/Modernfurnitureshop.png", title: "Furniture Store Website" },
+    { image: "/SERVICE/clotingunisex.png", title: "Clothing Store Website" },
   ];
 
   const carouselRef = useRef(null);

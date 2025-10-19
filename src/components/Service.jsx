@@ -12,7 +12,7 @@ export default function Service() {
     {
       "title": "Professional Company Profile (Website Korporat Profesional)",
       "desc": "Website resmi untuk meningkatkan kredibilitas dan branding perusahaan. Menyajikan informasi Visi-Misi, Portofolio, dan layanan dengan desain premium.",
-      "img": "/SERVICE/compro.png",
+      "img": "/SERVICE/comprob.png",
       "text": "Landasan digital yang kuat. Dilengkapi Formulir Kontak Terintegrasi dan desain responsif, memastikan citra perusahaan Anda terlihat meyakinkan di semua perangkat."
     },
     {
