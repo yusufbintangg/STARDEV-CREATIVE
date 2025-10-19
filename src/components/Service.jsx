@@ -6,37 +6,37 @@ export default function Service() {
     {
       "title": "Modern E-Commerce Solution (Toko Online Terpadu)",
       "desc": "Toko online siap pakai dengan integrasi payment gateway, keranjang belanja, dashboard admin untuk manajemen stok real-time, dan laporan penjualan.",
-      "img": "/SERVICE/ecomerce.png",
+      "img": "/servicepage/ecomerce.png",
       "text": "Solusi lengkap untuk bisnis ritel dan UKM yang ingin go digital. Desain Mobile-First dan SEO-Friendly untuk menjangkau pasar lebih luas dan meningkatkan konversi penjualan."
     },
     {
       "title": "Professional Company Profile (Website Korporat Profesional)",
       "desc": "Website resmi untuk meningkatkan kredibilitas dan branding perusahaan. Menyajikan informasi Visi-Misi, Portofolio, dan layanan dengan desain premium.",
-      "img": "/SERVICE/comprob.png",
+      "img": "/servicepage/comprob.png",
       "text": "Landasan digital yang kuat. Dilengkapi Formulir Kontak Terintegrasi dan desain responsif, memastikan citra perusahaan Anda terlihat meyakinkan di semua perangkat."
     },
     {
       "title": "Creative Portfolio & Personal Branding",
       "desc": "Galeri digital eksklusif untuk fotografer, desainer, atau freelancer. Tampilkan karya, case studies, testimoni, dan skill Anda dengan tata letak yang profesional.",
-      "img": "/SERVICE/personalbrand.png",
+      "img": "/servicepage/personalbrand.png",
       "text": "Bangun Personal Branding yang kuat dan tarik klien potensial. Website dirancang loading cepat dan fokus pada visual untuk membuat karya Anda lebih menonjol."
     },
     {
       "title": "Tour & Travel Management System (Sistem Manajemen Wisata)",
       "desc": "Solusi terintegrasi untuk mengelola pemesanan paket wisata, inventaris jadwal penerbangan/hotel, data pelanggan, hingga laporan keuangan dan komisi agen.",
-      "img": "/SERVICE/travel.png",
+      "img": "/servicepage/travel.png",
       "text": "Sistem terpadu untuk mengelola seluruh operasional agen perjalanan: inventaris paket, alokasi kursi/kamar, booking, pembayaran, dan laporan real-time untuk efisiensi bisnis."
     },
     {
       "title": "Digital Menu & E-Commerce F&B (Sistem Menu Digital dan E-Dagang Makanan & Minuman)",
       "desc": "Platform terintegrasi untuk menampilkan katalog menu (dengan foto/deskripsi), menerima pesanan (baik di tempat, take away, atau delivery), serta terhubung langsung ke sistem Point-of-Sale (POS) dapur dan pembayaran.",
-      "img": "/SERVICE/F&BMenuQR.png",
+      "img": "/servicepage/F&BMenuQR.png",
       "text": "Solusi digital menu layaknya e-commerce untuk restoran. Memudahkan pelanggan melihat varian produk, melakukan kustomisasi pesanan, dan checkout, sambil mengotomatisasi order masuk ke dapur (Kitchen Display System/KDS)."
     },
     {
       "title": "Custom Software & Internal System (Sistem Bisnis Kustom)",
       "desc": "Pengembangan Sistem Manajemen Internal sesuai kebutuhan unik perusahaan Anda. Ideal untuk HRIS, ERP, SCM, dashboard monitoring, atau aplikasi B2B kompleks.",
-      "img": "/SERVICE/ERPSimple.png",
+      "img": "/servicepage/ERPSimple.png",
       "text": "Solusi software yang dirancang end-to-end untuk mengotomatisasi dan mengintegrasikan proses bisnis Anda, dari pengelolaan sumber daya hingga pelaporan data strategis."
     }
   ];
