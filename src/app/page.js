@@ -9,6 +9,7 @@ import CallToAction from '@/components/CallToAction';
 import HeroContent from '@/components/HeroContent';
 import PortfolioSection from '@/components/Portfolio';
 import SupportService from '@/components/SupportService';
+import WorkFlow from '@/components/WorkFlow';
 
 export default function WebsiteServiceLandingPage() {
   // Animation variants
@@ -69,6 +70,17 @@ export default function WebsiteServiceLandingPage() {
         className="width-full-bg"
         style={{ backgroundImage: 'url(/background/3d-background-with-white-cubes1.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <SupportService/>
+      </section>
+      {/* Workflow Section */}
+      <section className="w-full bg-primary py-6 mt-0 mb-0"
+        style={{ backgroundImage: 'url(/background/kualik.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <motion.div
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}>
+          <WorkFlow/>
+        </motion.div>
       </section>
       {/* Portfolio Section */}
       <section id="portfolio" 

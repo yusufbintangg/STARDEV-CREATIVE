@@ -14,33 +14,33 @@ import { motion } from "framer-motion";
 const SupportService = () => {
   const services = [
     {
-      icon: <MonitorSmartphone className="w-10 h-10 text-purple-500" />,
+      icon: <MonitorSmartphone className="w-10 h-10 text-indigo-600" />,
       title: "Desain Responsif",
       desc: "Akses mudah di semua perangkat: PC, HP, Tablet, dan TV!",
     },
 
     {
-      icon: <Mail className="w-10 h-10 text-purple-500" />,
+      icon: <Mail className="w-10 h-10 text-indigo-600" />,
       title: "Email Bisnis",
       desc: "Email profesional dengan domain Anda untuk kesan terpercaya.",
     },
     {
-      icon: <Server className="w-10 h-10 text-purple-500" />,
+      icon: <Server className="w-10 h-10 text-indigo-600" />,
       title: "Dashboard Admin",
       desc: "Kelola konten website dengan mudah melalui dashboard.",
     },
     {
-      icon: <ShieldCheck className="w-10 h-10 text-purple-500" />,
+      icon: <ShieldCheck className="w-10 h-10 text-indigo-600" />,
       title: "Security",
       desc: "Lindungi website dari hacker dengan sertifikat SSL.",
     },
     {
-      icon: <Headphones className="w-10 h-10 text-purple-500" />,
+      icon: <Headphones className="w-10 h-10 text-indigo-600" />,
       title: "Support 24/7",
       desc: "Bantuan penuh kapan saja untuk masalah mendesak.",
     },
     {
-      icon: <PhoneCall className="w-10 h-10 text-purple-500" />,
+      icon: <PhoneCall className="w-10 h-10 text-indigo-600" />,
       title: "Form & Peta",
       desc: "Kontak langsung via form dan peta lokasi.",
     },
@@ -69,7 +69,7 @@ const SupportService = () => {
               transition={{ type: "spring", stiffness: 260, damping: 15 }}
               className="flex flex-col items-start space-y-4 bg-white p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 cursor-default"
             >
-              <div className="bg-green-50 p-4 rounded-xl">{item.icon}</div>
+              <div className="p-4 rounded-xl">{item.icon}</div>
               <h3 className="text-xl font-semibold text-gray-800">
                 {item.title}
               </h3>
