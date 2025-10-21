@@ -117,7 +117,7 @@ export default function PortfolioSection() {
                 setCurrentIndex(index);
                 x.set(-index * (dimensions.loopWidth / projects.length));
               }}
-              className={`w-4 h-4 rounded-full transition-all duration-300 ${
+              className={`w-3 h-3 rounded-full transition-all duration-300 ${
                 index === currentIndex ? 'bg-black scale-125' : 'bg-blue-600 hover:bg-purple-500'
               }`}
             />

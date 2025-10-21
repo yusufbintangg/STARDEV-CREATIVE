@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import { Button } from "@/components/ui/button";
 import {
   Server,
   MonitorSmartphone,
@@ -65,9 +64,15 @@ const SupportService = () => {
           {services.map((item, index) => (
             <motion.div
               key={index}
-              whileHover={{ y: -6, scale: 1.03 }}
-              transition={{ type: "spring", stiffness: 260, damping: 15 }}
-              className="flex flex-col items-start space-y-4 bg-white p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 cursor-default"
+              className="flex flex-col items-start space-y-4 bg-white p-6 rounded-2xl border border-gray-100 shadow-xl hover:shadow-2xl transition duration-300 cursor-default"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 0.6,
+                delay: index * 0.1,
+                ease: "easeOut",
+              }}
+              viewport={{ once: true }}
             >
               <div className="p-4 rounded-xl">{item.icon}</div>
               <h3 className="text-xl font-semibold text-gray-800">
@@ -76,26 +81,6 @@ const SupportService = () => {
               <p className="text-gray-600 leading-relaxed">{item.desc}</p>
             </motion.div>
           ))}
-        </div>
-        <div className="text-center mt-12">
-          <Button asChild className="text-white bg-black px-6 py-2 rounded-full mx-2 my-1 hover:scale-110
-                      transform transition duration-300
-                      hover:border-black
-                      hover:text-white
-                      hover:shadow-lg
-                      hover:bg-black text-white transition-all duration-300">
-                    <a href={`https://wa.me/628988025033?text=
-                      ${encodeURIComponent(
-                        `Halo StarDev, saya tertarik dengan jasa pembuatan website.`)
-                        }`} target="_blank" rel="noopener noreferrer">
-                     Konsultasi Kebutuhan Anda Sekarang!!
-                    </a>
-                  </Button>
-          <p className="text-lg text-center text-muted-foreground mt-5">
-            Kami siap membantu Anda mewujudkan website impian dengan kualitas terbaik dan harga terjangkau.
-            <br />
-            Konsultasikan kebutuhan Anda sekarang juga!
-          </p>
         </div>
       </div>
     </section>

@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
 import { Briefcase, FileText, Code, CheckCircle, Globe, Handshake, CodeXml } from "lucide-react";
 
 const steps = [
@@ -38,7 +39,7 @@ export default function WorkFlow() {
   return (
     <section className="text-gray-800 mt-1 mb-0">
       {/* Header Section */}
-      <div className="max-w-7xl mx-auto px-6 py-24 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div className="max-w-7xl mx-auto px-6 py-15 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -73,7 +74,7 @@ export default function WorkFlow() {
           {steps.map((step, i) => (
             <motion.div
               key={i}
-              className="bg-gray-50 p-8 rounded-2xl shadow-sm hover:shadow-md transition duration-300 flex flex-col items-center text-center"
+              className="bg-gray-50 p-8 rounded-2xl shadow-lx hover:shadow-md transition duration-300 flex flex-col items-center text-center"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
@@ -89,6 +90,26 @@ export default function WorkFlow() {
             </motion.div>
           ))}
         </div>
+        <div className="text-center mt-12">
+                  <Button asChild className="text-white bg-black px-6 py-2 rounded-full mx-2 my-1 hover:scale-110
+                              transform transition duration-300
+                              hover:border-black
+                              hover:text-white
+                              hover:shadow-lg
+                              hover:bg-black text-white transition-all duration-300">
+                            <a href={`https://wa.me/628988025033?text=
+                              ${encodeURIComponent(
+                                `Halo StarDev, saya tertarik dengan jasa pembuatan website.`)
+                                }`} target="_blank" rel="noopener noreferrer">
+                             Konsultasi Kebutuhan Anda Sekarang!!
+                            </a>
+                          </Button>
+                  <p className="text-lg text-center text-gray mt-5">
+                    Kami siap membantu Anda mewujudkan website impian dengan kualitas terbaik dan harga terjangkau.
+                    <br />
+                    Konsultasikan kebutuhan Anda sekarang juga!
+                  </p>
+                </div>
       </div>
     </section>
   );

@@ -49,7 +49,7 @@ export default function Header() {
   ];
 
   return (
-    <header className="fixed top-4 left-1/2 transform -translate-x-1/2 w-[90%] md:w-[80%] bg-white/60 backdrop-blur-lg border border-white/30 rounded-2xl shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] z-50 transition-all duration-300">
+    <header className="fixed top-4 left-1/2 transform -translate-x-1/2 w-[90%] md:w-[80%] bg-white/40 backdrop-blur-lg border border-white/30 rounded-2xl shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] z-50 transition-all duration-300">
       <div className="container mx-auto px-6 flex justify-between items-center py-3">
         {/* Logo */}
         <section>
