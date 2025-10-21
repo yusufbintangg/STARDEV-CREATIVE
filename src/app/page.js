@@ -73,7 +73,7 @@ export default function WebsiteServiceLandingPage() {
       </section>
       {/* Workflow Section */}
       <section className="w-full bg-primary py-6 mt-0 mb-0"
-        style={{ backgroundImage: 'url(/background/kualik.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        style={{ backgroundImage: 'url(/background/kualikjg.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <motion.div
           variants={fadeUp}
           initial="hidden"
