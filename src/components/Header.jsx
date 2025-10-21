@@ -57,7 +57,7 @@ export default function Header() {
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             className="cursor-pointer flex items-center"
           >
-          <img src="/og-image-stardev.jpg" alt="Logo" className="mr-2 h-10 w-auto rounded-lg logo-glow" />
+          <img src="/og-image-stardev.jpg" alt="Logo" className="mr-2 h-10 w-auto rounded-lg" />
             <span className="font-semibold text-lg text-black/80"></span>
           </div>
         </section>

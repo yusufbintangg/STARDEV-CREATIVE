@@ -47,10 +47,11 @@ export default function Footer() {
       {/* Bottom Section */}
       <div className="flex flex-col md:flex-row justify-between items-center mt-6 text-black">
         {/* Social Icons */}
-        <div className="flex space-x-4 mb-4 md:mb-0">
-          <a href="https://github.com/yusufbintangg" className="hover:text-black"/>
+        <div className="flex space-x-4 mb-4 md:mb-0 ">
+          <a href="https://github.com/yusufbintangg" className="hover:text-black">
             <i className="fab fa-github text-xl"></i>
-          <a href="https://www.facebook.com/share/17WjPAgpLN/?mibextid=wwXIfr" className="hover:text-black">
+          </a>
+          <a href="https://web.facebook.com/stardevcreative/" className="hover:text-black">
             <i className="fab fa-facebook text-xl"></i>
           </a>
           <a href="https://www.linkedin.com/in/yusuf-bintang-32b7a1319?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" className="hover:text-black">

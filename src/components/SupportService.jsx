@@ -54,7 +54,7 @@ const SupportService = () => {
           className="text-center mb-12"
         >
           <h2 className="text-4xl font-extrabold text-black-600 mb-6">
-            Fitur Unggulan untuk Sukses Bisnis Anda
+            Fitur Unggulan Layanan Kami untuk Website Profesional Anda
           </h2>
           <p className="text-lg text-grey-600 max-w-3xl mx-auto leading-relaxed">
             Dapatkan layanan website profesional di Surabaya dan Jakarta. Dari desain modern hingga support andal, kami bantu optimalkan kehadiran online bisnis Anda dengan fitur-fitur esensial yang powerful.

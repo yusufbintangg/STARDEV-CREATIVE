@@ -29,9 +29,9 @@ export default function Service() {
     },
     {
       "title": "Digital Menu & E-Commerce F&B (Sistem Menu Digital dan E-Dagang Makanan & Minuman)",
-      "desc": "Platform terintegrasi untuk menampilkan katalog menu (dengan foto/deskripsi), menerima pesanan (baik di tempat, take away, atau delivery), serta terhubung langsung ke sistem Point-of-Sale (POS) dapur dan pembayaran.",
+      "desc": "Platform terintegrasi yang berfungsi sebagai menu digital dan toko online untuk restoran. Memungkinkan pelanggan melihat katalog interaktif, kustomisasi pesanan, dan checkout.",
       "img": "/servicepage/F&BMenuQR.png",
-      "text": "Solusi digital menu layaknya e-commerce untuk restoran. Memudahkan pelanggan melihat varian produk, melakukan kustomisasi pesanan, dan checkout, sambil mengotomatisasi order masuk ke dapur (Kitchen Display System/KDS)."
+      "text": "Sistem ini secara otomatis menghubungkan pesanan (dine-in, take-away, delivery) ke POS, dapur (KDS), dan pembayaran."
     },
     {
       "title": "Custom Software & Internal System (Sistem Bisnis Kustom)",
