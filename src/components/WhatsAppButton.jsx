@@ -4,7 +4,7 @@ const WhatsAppButton = () => {
   return (
     <a
       onClick={() => {
-        window.open('https://wa.me/628988025033?text=' + encodeURIComponent('Halo StarDev, saya tertarik dengan jasa pembuatan website.'), '_blank');
+        window.open('https://api.whatsapp.com/send?phone=+628988025033&text=' + encodeURIComponent('Halo StarDev, saya tertarik dengan jasa pembuatan website.'), '_blank');
       }}
       target="_blank"
       rel="noopener noreferrer"

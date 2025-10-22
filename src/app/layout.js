@@ -109,7 +109,7 @@ export default function RootLayout({ children }) {
       "https://www.instagram.com/yusufbintangg?igsh=Y21uOTBwOGVzdmYz",
       "https://www.threads.com/yusufbintangg?igsh=Y21uOTBwOGVzdmYz",
       "https://www.tiktok.com/@yusufbintanggg?_t=ZS-90QAyAwztys&_r=1",
-      "https://wa.me/+628988025033"
+      "https://api.whatsapp.com/send?phone=+628988025033"
     ],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",

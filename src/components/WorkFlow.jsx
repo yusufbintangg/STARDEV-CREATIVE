@@ -97,7 +97,7 @@ export default function WorkFlow() {
                               hover:text-white
                               hover:shadow-lg
                               hover:bg-black text-white transition-all duration-300">
-                            <a href={`https://wa.me/628988025033?text=
+                            <a href={`https://api.whatsapp.com/send?phone=+628988025033&text=
                               ${encodeURIComponent(
                                 `Halo StarDev, saya tertarik dengan jasa pembuatan website.`)
                                 }`} target="_blank" rel="noopener noreferrer">
