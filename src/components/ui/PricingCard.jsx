@@ -23,7 +23,7 @@ const PricingCard = ({ pkg, activeCategory }) => {
         className="action"
         type="button"
         onClick={() => {
-          window.open(`https://api.whatsapp.com/send?phone=+628988025033&text=${encodeURIComponent(`Saya mau pesan paket ${pkg.name} dari kategori ${activeCategory}`)}`, '_blank');
+          window.open(`https://api.whatsapp.com/send?phone=+6289616869977&text=${encodeURIComponent(`Saya mau pesan paket ${pkg.name} dari kategori ${activeCategory}`)}`, '_blank');
         }}
       >
         Pesan Sekarang

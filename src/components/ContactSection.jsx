@@ -19,7 +19,7 @@ export default function ContactSection() {
               hover:text-white
               hover:shadow-lg
               hover:bg-black text-white transition-all duration-300">
-            <a href={`https://api.whatsapp.com/send?phone=+628988025033&text=
+            <a href={`https://api.whatsapp.com/send?phone=+6289616869977&text=
               ${encodeURIComponent(
                 `Halo StarDev, saya tertarik dengan jasa pembuatan website.`)}`}
                 target="_blank"
