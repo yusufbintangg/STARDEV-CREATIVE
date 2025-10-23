@@ -66,7 +66,11 @@ export default function Footer() {
           <a href="https://www.tiktok.com/@yusufbintanggg?_t=ZS-90QAyAwztys&_r=1" className="hover:text-black">
             <i className="fab fa-tiktok text-xl"></i>
           </a>
-          <a href="https://api.whatsapp.com/send?phone=+628988025033" className="hover:text-black">
+          <a href={`https://api.whatsapp.com/send?phone=+6289616869977&text=${encodeURIComponent(
+                    `Halo StarDev, saya tertarik dengan jasa pembuatan website profesional untuk bisnis saya.`,
+                  )}`}
+                  target="_blank"
+                  rel="noopener noreferrer" className="hover:text-black">
             <i className="fab fa-whatsapp text-xl"></i>
           </a>
         </div>
