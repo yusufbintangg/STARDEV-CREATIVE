@@ -51,7 +51,7 @@ export default function HeroContent() {
                   hover:from-blue-700 hover:to-indigo-700 font-semibold text-base md:text-lg"
               >
                 <a
-                  href={`https://api.whatsapp.com/send?phone=+628988025033&text=${encodeURIComponent(
+                  href={`https://api.whatsapp.com/send?phone=+6289616869977&text=${encodeURIComponent(
                     `Halo StarDev, saya tertarik dengan jasa pembuatan website profesional untuk bisnis saya.`,
                   )}`}
                   target="_blank"
