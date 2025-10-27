@@ -43,7 +43,7 @@ export default function PricingSection() {
       </div>
 
       {/* Cards */}  
-      <div className="relative grid grid-cols-1 md:grid-cols-3 gap-4 px-4 md:px-0 md:h-[670px]">
+      <div className="relative grid grid-cols-1 md:grid-cols-3 gap-4 px-4 md:px-0 md:h-[600px]">
 
         <AnimatePresence>
           {pricingData[activeCategory].map((pkg) => (
