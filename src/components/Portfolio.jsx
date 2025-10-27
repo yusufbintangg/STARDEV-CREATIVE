@@ -84,8 +84,8 @@ export default function PortfolioSection() {
   return (
     <section id="portfolio" className="py-20 text-black">
       <div className="container mx-auto px-8 text-center">
-        <h2 className="text-6xl font-bold mb-4">Portfolio Kami</h2>
-        <p className="text-2lg text-black-300 mb-10 max-w-2xl mx-auto">
+        <h2 className="text-7xl font-bold mb-12">Portfolio Kami</h2>
+        <p className="text-2lg text-4xl text-black-300 mb-14 max-w-6xl mx-auto">
           Jelajahi koleksi karya terbaik kami yang telah membantu berbagai bisnis berkembang dan sukses di dunia digital
         </p>
 

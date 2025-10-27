@@ -74,7 +74,8 @@ export default function WorkFlow() {
           {steps.map((step, i) => (
             <motion.div
               key={i}
-              className="bg-gray-50 p-8 rounded-2xl shadow-lx hover:shadow-md transition duration-300 flex flex-col items-center text-center"
+              className="bg-gray-50 p-8 rounded-2xl shadow-lx hover:shadow-md transition duration-300 flex flex-col items-center text-center
+              hover:scale-105"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{

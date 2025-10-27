@@ -98,62 +98,55 @@ export const pricingData = {
     },
   ],
   "E-Commerce Solutions": [
-    {
-      id: 7,
-      name: "Basic E-Commerce",
-       price: "Rp 3.298.000",
-      description:
-        "Cocok untuk UMKM yang baru mulai jualan online dengan kebutuhan dasar.",
-      features: [
-        "Desain responsif (mobile & desktop)",
-        "Hingga 20 produk",
-        "Keranjang belanja sederhana",
-        "Integrasi WhatsApp untuk checkout",
-        "Halaman Home, Produk, Tentang, dan Kontak",
-        "Gratis domain .my.id (1 tahun)",
-        "Hosting gratis 3 bulan",
-        "Optimasi kecepatan dasar",
-      ],
-    },
-    {
-      id: 8,
-      name: "Professional E-Commerce",
-       price: "Rp 4.390.000",
-      description:
-        "Ideal untuk bisnis yang ingin sistem transaksi otomatis dan tampilan profesional.",
-      features: [
-        "Desain modern & responsif",
-        "Hingga 100 produk",
-        "Checkout otomatis dengan **Midtrans / Xendit**",
-        "Manajemen stok & kategori produk",
-        "Dashboard admin sederhana",
-        "Halaman Home, Produk, Kategori, Tentang, Blog, Kontak",
-        "Gratis domain **.com** (1 tahun)",
-        "Hosting gratis 6 bulan",
-        "SEO dasar + optimasi performa",
-      ],
-    },
-    {
-      id: 9,
-      name: "Premium E-Commerce",
-      price: "Rp 6.398.000+",
-      description:
-        "Solusi lengkap untuk bisnis skala besar yang butuh sistem e-commerce canggih.",
-      features: [
-        "Desain eksklusif (custom sesuai brand)",
-        "Produk **unlimited**",
-        "CMS admin panel lengkap (Next.js + API)",
-        "Sistem checkout otomatis + diskon + ongkir dinamis",
-        "Integrasi pembayaran (**Midtrans, Xendit, PayPal**)",
-        "Manajemen user & order detail",
-        "Integrasi dashboard analytics",
-        "Gratis domain **.com** (1 tahun)",
-        "Hosting gratis 12 bulan",
-        "Keamanan SSL + backup otomatis",
-        "Support & maintenance 3 bulan",
-      ],
-    },
-  ],
+  {
+    id: 7,
+    name: "Basic E-Commerce",
+    price: "Rp 3.298.000",
+    description: "Untuk UMKM yang baru mulai jualan online, simple tapi tetap profesional.",
+    features: [
+      "Desain responsif (mobile & desktop)",
+      "Hingga 20 produk",
+      "Keranjang belanja sederhana",
+      "Checkout via WhatsApp",
+      "Halaman Home, Produk, Tentang, Kontak",
+      "Gratis domain .my.id (1 tahun)",
+      "Hosting gratis 3 bulan",
+    ],
+  },
+  {
+    id: 8,
+    name: "Professional E-Commerce",
+    price: "Rp 4.990.000",
+    description: "Tingkatkan penjualan dengan sistem pembayaran otomatis & tampilan modern.",
+    features: [
+      "Desain modern & responsif",
+      "Hingga 100 produk",
+      "Sistem checkout otomatis Midtrans ",
+      "Manajemen stok & kategori produk",
+      "Dashboard admin sederhana",
+      "Halaman Home, Produk, Kategori, Blog, Tentang, Kontak",
+      "Gratis domain .com (1 tahun)",
+      "Optimasi SEO dasar",
+    ],
+  },
+  {
+    id: 9,
+    name: "Premium E-Commerce",
+    price: "Rp 6.990.000+",
+    description: "Solusi e-commerce lengkap untuk brand besar dengan kebutuhan lanjutan.",
+    features: [
+      "Desain eksklusif (custom sesuai brand)",
+      "Produk unlimited",
+      "Dashboard admin & CMS lengkap (Next.js + API)",
+      "Sistem diskon, ongkir dinamis, dan laporan penjualan",
+      "Integrasi pembayaran online",
+      "Manajemen user & order detail",
+      "Integrasi Google Analytics & Pixel Ads ",
+      "Gratis domain .com (1 tahun)",
+      "Support & maintenance 2 bulan",
+    ],
+  },
+],
   "Tour & Travel Management System": [
     {
       id: 10,
@@ -201,95 +194,94 @@ export const pricingData = {
       ],
     },
   ],
-  "Digital Menu & E-Commerce F&B": [
-    {
-      id: 13,
-      name: "Digital Menu Only",
-      price: "Rp 2.997.000",
-      description: "Menu digital untuk digunakan di tempat (QR Code) tanpa sistem pembayaran online.",
-      features: [
-        "Tampilan menu digital interaktif",
-        "Sistem QR Code untuk meja",
-        "Customisasi Menu (add-ons, kategori)",
-        "Dashboard update menu instan",
-        "Responsif untuk tablet & HP",
-        "Hosting gratis 6 bulan"
-      ],
-    },
-    {
-      id: 14,
-      name: "F&B POS Starter Kit",
-      price: "Rp 6.500.000+",
-      description: "Sistem menu digital dengan integrasi pembayaran dan order management dasar.",
-      features: [
-        "Semua fitur Digital Menu Only",
-        "Sistem Checkout dengan pembayaran online",
-        "Kitchen Display System (KDS) sederhana",
-        "Order Tracking (Received, Cooking, Ready)",
-        "Laporan Penjualan Harian",
-        "Gratis domain .com (1 tahun)",
-        "Pelatihan & support 1 bulan"
-      ],
-    },
-    {
-      id: 15,
-      name: "F&B Advanced Management",
-      price: "Custom Quote (Nego)",
-      description: "Solusi lengkap untuk restoran dengan kebutuhan inventory & delivery kompleks.",
-      features: [
-        "Semua fitur POS Starter Kit",
-        "Manajemen Inventaris Bahan Baku",
-        "Sistem Diskon & Promo Kompleks",
-        "Manajemen Meja & Dine-in Order",
-        "Integrasi 3rd Party Delivery (opsional)",
-        "Laporan Cost of Goods Sold (COGS)",
-        "Support & maintenance 2 bulan"
-      ],
-    },
-  ],
-  "Custom Software & Internal System": [
-    {
-      id: 16,
-      name: "Business Dashboard MVP",
-      price: "Mulai Rp 7.000.000",
-      description: "Pembuatan Minimum Viable Product (MVP) untuk solusi internal spesifik.",
-      features: [
-        "Dashboard & Interface Awal",
-        "Maksimal 2 core module (misal: Data Entry & Laporan Sederhana)",
-        "Manajemen User Dasar",
-        "Teknologi Open Source",
-        "Rancangan Database Dasar",
-        "Konsultasi Project & Roadmap"
-      ],
-    },
-    {
-      id: 17,
-      name: "Integrated System Development",
-      price: "Mulai Rp 12.000.000+",
-      description: "Pengembangan sistem internal yang lebih kompleks, seperti HRIS atau SCM skala menengah.",
-      features: [
-        "Dashboard dengan Custom Roles",
-        "Maksimal 4 core module",
-        "Manajemen Workflow (Approval/Status)",
-        "Integrasi Custom API untuk data pihak ke-3",
-        "Keamanan dan Scalability Prioritas",
-        "Pelatihan Super User"
-      ],
-    },
-    {
-      id: 18,
-      name: "Full Scale ERP/HRIS",
-      price: "Custom Quote (Nego)",
-      description: "Proyek skala besar yang membutuhkan Enterprise Resource Planning (ERP) atau sistem HRIS end-to-end secara penuh.",
-      features: [
-        "Pengembangan End-to-End (Sesuai Kebutuhan)",
-        "Modul Unlimted (misal: HR, Finance, Inventory)",
-        "Integrasi Multi-Divisi & Multi-Cabang",
-        "Konsultasi Business Process Mapping",
-        "Kontrak Maintenance Jangka Panjang",
-        "Keamanan & Disaster Recovery Plan",
-        "Kode & Dokumentasi Lengkap"
-      ],
-    },
+  "Hotel & Homestay Booking System": [
+      {
+        id: 13,
+        name: "Basic Booking Catalog",
+        price: "Rp 3.500.000",
+        description: "Website katalog kamar interaktif untuk homestay atau guest house kecil tanpa sistem pembayaran online.",
+        features: [
+          "Tampilan katalog kamar interaktif (foto & deskripsi)",
+          "Form pemesanan langsung via WhatsApp",
+          "Kalender ketersediaan sederhana (manual update)",
+          "Dashboard admin dasar untuk kelola kamar & harga",
+          "Desain responsif untuk mobile & desktop",
+          "Domain .com gratis 1 tahun"
+        ],
+      },
+      {
+        id: 14,
+        name: "Hotel Booking System Pro",
+        price: "Rp 6.800.000+",
+        description: "Sistem pemesanan online dengan integrasi pembayaran otomatis dan manajemen kamar real-time.",
+        features: [
+          "Semua fitur Basic Booking Catalog",
+          "Sistem booking otomatis dengan kalender ketersediaan real-time",
+          "Integrasi payment gateway (Midtrans / Xendit)",
+          "Dashboard admin untuk kelola kamar, harga, dan reservasi",
+          "Laporan reservasi & pendapatan harian",
+          "Gratis domain .com (1 tahun)",
+          "Pelatihan & support 1 bulan"
+        ],
+      },
+      {
+        id: 15,
+        name: "Hotel Management Advanced",
+        price: "Custom Quote (Nego)",
+        description: "Solusi lengkap untuk hotel atau resort dengan kebutuhan manajemen dan integrasi sistem tingkat lanjut.",
+        features: [
+          "Semua fitur Booking System Pro",
+          "Sistem manajemen reservasi real-time (check-in/check-out)",
+          "Integrasi multi-payment & notifikasi otomatis (email/WhatsApp)",
+          "Manajemen promo & diskon musiman",
+          "Integrasi channel manager / OTA sync (opsional)",
+          "Laporan penjualan & okupansi lengkap",
+          "Support & maintenance 2 bulan"
+        ],
+      },
+    ],
+  "Smart F&B System": [
+  {
+    id: 16,
+    name: "Digital Menu Basic",
+    price: "Mulai Rp 5.500.000",
+    description: "Paket dasar untuk usaha kuliner seperti restoran kecil, coffee shop, burjo, atau kedai yang ingin menggunakan menu digital berbasis QR.",
+    features: [
+      "Tampilan menu digital interaktif (QR Code per meja)",
+      "Kustomisasi menu & kategori",
+      "Dashboard untuk update menu & harga",
+      "Responsif untuk tablet & smartphone",
+      "Notifikasi pesanan ke dashboard admin/kasir"
+    ],
+  },
+  {
+    id: 17,
+    name: "Smart Ordering System",
+    price: "Mulai Rp 6.500.000+",
+    description: "Sistem pemesanan digital dengan integrasi pembayaran online dan manajemen pesanan dapur (KDS) untuk operasional yang lebih efisien.",
+    features: [
+      "Semua fitur Digital Menu Basic",
+      "Sistem checkout otomatis (QR/Online Payment)",
+      "Kitchen Display System (KDS) sederhana",
+      "Order status tracking (Diterima, Diproses, Siap)",
+      "Laporan penjualan harian",
+      "Dashboard kasir & manajemen meja"
+    ],
+  },
+  {
+    id: 18,
+    name: "Smart F&B Pro",
+    price: "Custom Quote (Nego)",
+    description: "Solusi digital terlengkap untuk bisnis kuliner skala besar seperti restoran franchise, cafe chain, atau cloud kitchen.",
+    features: [
+      "Semua fitur Smart Ordering System",
+      "Integrasi POS lengkap (kasir, pembayaran, laporan)",
+      "Manajemen stok & bahan baku (inventory)",
+      "Sistem diskon, promo, & paket menu",
+      "Integrasi dengan layanan delivery (opsional)",
+      "Dashboard analytics & laporan keuangan",
+      "Support & maintenance pasca implementasi"
+    ],
+  },
   ],
 };

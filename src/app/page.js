@@ -10,6 +10,7 @@ import HeroContent from '@/components/HeroContent';
 import PortfolioSection from '@/components/Portfolio';
 import SupportService from '@/components/SupportService';
 import WorkFlow from '@/components/WorkFlow';
+import AboutUs from '@/components/AboutUs';
 
 export default function WebsiteServiceLandingPage() {
   // Animation variants
@@ -52,8 +53,8 @@ export default function WebsiteServiceLandingPage() {
           </motion.div>
       </section>
       {/* Pricing Page */}
-      <div className="py-6 my-8 mt-0 mb-0 width-full-bg background-texture-light"
-        style={{ backgroundImage: 'url(/background/3d-background-with-white-cubes3.jpg) ', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+      <div className="py-6 my-8 mt-0 mb-0 width-full-bg bg-gray-200"
+              style={{ backgroundImage: 'url(/background/3d-background-with-white-cubes.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
 
       <section id="pricing">
         <motion.div
@@ -66,6 +67,17 @@ export default function WebsiteServiceLandingPage() {
         </motion.div>
       </section>
             </div>
+      {/* About Us Section */}
+      <section className="w-full bg-primary py-6 mt-0 mb-0"
+        style={{ backgroundImage: 'url(/background/3d-background-with-white-cubes1.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <motion.div
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}>
+          <AboutUs/>
+        </motion.div>
+      </section>
       <section id="Support"
         className="width-full-bg"
         style={{ backgroundImage: 'url(/background/3d-background-with-white-cubes1.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
@@ -85,7 +97,7 @@ export default function WebsiteServiceLandingPage() {
       {/* Portfolio Section */}
       <section id="portfolio" 
       className=" text-white bg-primary"
-        style={{ backgroundImage: 'url(/background/3d-background-with-white-cubes5.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        style={{ backgroundImage: 'url(/background/3d-background-with-white-cubes.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <motion.div
           className="container mx-auto px-4 "
           variants={fadeUp}
@@ -98,7 +110,7 @@ export default function WebsiteServiceLandingPage() {
       {/* Contact Section */}
       <section id="kontak"
         className="text-black width-full-bg "
-        style={{ backgroundImage: 'url(/background/kualikjg.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        style={{ backgroundImage: 'url(/background/3d-background-with-white-cubes1.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <motion.div
           className="w-full"
           variants={fadeUp}

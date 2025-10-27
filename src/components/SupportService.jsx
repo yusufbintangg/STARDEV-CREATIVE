@@ -64,7 +64,8 @@ const SupportService = () => {
           {services.map((item, index) => (
             <motion.div
               key={index}
-              className="flex flex-col items-start space-y-4 bg-white p-6 rounded-2xl border border-gray-100 shadow-xl hover:shadow-2xl transition duration-300 cursor-default"
+              className="flex flex-col items-start text-white space-y-4 bg-white p-6 rounded-2xl border border-gray-100 shadow-xl hover:shadow-2xl transition duration-300 cursor-default
+              transition duration-300 flex flex-col hover:scale-105"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{

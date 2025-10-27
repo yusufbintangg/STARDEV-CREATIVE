@@ -43,7 +43,7 @@ export default function Header() {
     { name: "Home", id: "Home" },
     { name: "Layanan", id: "layanan" },
     { name: "Pricing", id: "pricing" },
-    { name: "Support", id: "Support" },
+    { name: "About", id: "Support" },
     { name: "Portfolio", id: "portfolio" },
     { name: "Kontak", id: "kontak" },
   ];
