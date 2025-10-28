@@ -11,6 +11,17 @@ import {
 import { motion } from "framer-motion";
 
 const SupportService = () => {
+  // Animation variants for fade in from sides
+  const fadeFromLeft = {
+    hidden: { opacity: 0, x: -30 },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.8 } },
+  };
+
+  const fadeFromRight = {
+    hidden: { opacity: 0, x: 30 },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.8 } },
+  };
+
   const services = [
     {
       icon: <MonitorSmartphone className="w-10 h-10 text-indigo-600" />,
@@ -49,16 +60,24 @@ const SupportService = () => {
     <section className="py-10 text-center px-0">
       <div className="max-w-6xl mx-auto px-6">
         <motion.div
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          variants={fadeFromLeft}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
           className="text-center mb-12"
         >
           <h2 className="text-4xl font-extrabold text-black-600 mb-6">
             Fitur Unggulan Layanan Kami untuk Website Profesional Anda
           </h2>
-          <p className="text-lg text-grey-600 max-w-3xl mx-auto leading-relaxed">
+          <motion.p
+            className="text-lg text-grey-600 max-w-3xl mx-auto leading-relaxed"
+            variants={fadeFromRight}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+          >
             Dapatkan layanan website profesional di Surabaya dan Jakarta. Dari desain modern hingga support andal, kami bantu optimalkan kehadiran online bisnis Anda dengan fitur-fitur esensial yang powerful.
-          </p>
+          </motion.p>
         </motion.div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 text-center">
           {services.map((item, index) => (
@@ -66,14 +85,11 @@ const SupportService = () => {
               key={index}
               className="flex flex-col items-start text-white space-y-4 bg-white p-6 rounded-2xl border border-gray-100 shadow-xl hover:shadow-2xl transition duration-300 cursor-default
               transition duration-300 flex flex-col hover:scale-105"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{
-                duration: 0.6,
-                delay: index * 0.1,
-                ease: "easeOut",
-              }}
+              variants={index % 2 === 0 ? fadeFromLeft : fadeFromRight}
+              initial="hidden"
+              whileInView="visible"
               viewport={{ once: true }}
+              transition={{ delay: index * 0.1 }}
             >
               <div className="p-4 rounded-xl">{item.icon}</div>
               <h3 className="text-xl font-semibold text-gray-800">

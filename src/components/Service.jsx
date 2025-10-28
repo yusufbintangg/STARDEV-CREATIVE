@@ -1,7 +1,18 @@
 "use client";
 import ServiceCard from "./ServiceCard";
+import { motion } from "framer-motion";
 
 export default function Service() {
+  // Animation variants for fade in from sides
+  const fadeFromLeft = {
+    hidden: { opacity: 0, x: -30 },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.8 } },
+  };
+
+  const fadeFromRight = {
+    hidden: { opacity: 0, x: 30 },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.8 } },
+  };
   const layananList = [
     {
       "title": "Creative Portfolio & Personal Branding",
@@ -44,19 +55,39 @@ export default function Service() {
 
   return (
       <section className="py-20 px-0">
-        <h2 className="text-5xl font-bold text-center text-foreground mt-2 mb-14">
+        <motion.h2
+          className="text-5xl font-bold text-center text-foreground mt-2 mb-14"
+          variants={fadeFromLeft}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        >
           Price list dan Paket Layanan Kami
-            </h2>
-                <div className="text-xl text-center text-foreground mb-7 grid-cols-ound min-h-[90px]">
-                  <p className="bg-gradient-to-r bg-clip-text text-grey font-semibold">
-                    Kami menyediakan berbagai paket layanan pembuatan website sesuai dengan kebutuhan bisnis Anda. Dengan harga terjangkau dan kualitas premium. Dipercaya oleh lebih dari 100+ klien di seluruh Indonesia. Dapatkan penawaran terbaik hari ini juga!
-                  </p>
-                </div>
+        </motion.h2>
+        <motion.div
+          className="text-xl text-center text-foreground mb-7 grid-cols-ound min-h-[90px]"
+          variants={fadeFromRight}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        >
+          <p className="bg-gradient-to-r bg-clip-text text-grey font-semibold">
+            Kami menyediakan berbagai paket layanan pembuatan website sesuai dengan kebutuhan bisnis Anda. Dengan harga terjangkau dan kualitas premium. Dipercaya oleh lebih dari 100+ klien di seluruh Indonesia. Dapatkan penawaran terbaik hari ini juga!
+          </p>
+        </motion.div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {layananList.map((item, i) => (
-            <div className="h-full" key={i}>
+            <motion.div
+              className="h-full"
+              key={i}
+              variants={i % 2 === 0 ? fadeFromLeft : fadeFromRight}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.1 }}
+            >
               <ServiceCard key={item.title} item={item} />
-            </div>
+            </motion.div>
           ))}
         </div>
       </section>

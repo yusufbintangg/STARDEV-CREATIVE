@@ -36,14 +36,25 @@ const reasons = [
 ];
 
 export default function AboutUs() {
+  // Animation variants for fade in from sides
+  const fadeFromLeft = {
+    hidden: { opacity: 0, x: -30 },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.8 } },
+  };
+
+  const fadeFromRight = {
+    hidden: { opacity: 0, x: 30 },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.8 } },
+  };
+
   return (
     <section className="text-gray-800 mt-1 mb-0">
       {/* Header Section */}
       <div className="max-w-7xl mx-auto px-6 py-15 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          variants={fadeFromLeft}
+          initial="hidden"
+          whileInView="visible"
           viewport={{ once: true }}
         >
           <h2 className="text-4xl md:text-7xl font-semibold leading-tight text-gray-900">
@@ -52,13 +63,13 @@ export default function AboutUs() {
         </motion.div>
         <motion.p
           className="text-gray-900 text-lg leading-relaxed"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
+          variants={fadeFromRight}
+          initial="hidden"
+          whileInView="visible"
           viewport={{ once: true }}
         >
           StarDev Creative adalah agensi pengembangan website yang berfokus pada solusi digital yang efektif, strategis, dan berorientasi pada hasil.
-          Kami membantu bisnis membangun kehadiran online yang profesional melalui website yang tidak hanya menarik secara visual, 
+          Kami membantu bisnis membangun kehadiran online yang profesional melalui website yang tidak hanya menarik secara visual,
           tetapi juga berfungsi optimal untuk mendukung pertumbuhan penjualan dan reputasi merek.
           <br /><br />
           </motion.p>
@@ -71,14 +82,11 @@ export default function AboutUs() {
             <motion.div
               key={i}
               className="bg-gray-50 p-8 rounded-2xl shadow-lx hover:shadow-md transition duration-300 flex flex-col hover:scale-105"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{
-                duration: 0.6,
-                delay: i * 0.1,
-                ease: "easeOut",
-              }}
+              variants={i % 2 === 0 ? fadeFromLeft : fadeFromRight}
+              initial="hidden"
+              whileInView="visible"
               viewport={{ once: true }}
+              transition={{ delay: i * 0.1 }}
             >
               <div className="mb-4">{reason.icon}</div>
               <h4 className="text-xl font-semibold mb-3">{reason.title}</h4>

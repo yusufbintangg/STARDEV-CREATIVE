@@ -23,22 +23,22 @@ export default function HeroContent() {
         />
       </div>
        {/* Konten utama */}
-      <div className="h-[70vh] relative z-10 flex items-center">
+      <div className="relative z-10 flex items-center justify-center h-screen overflow-hidden">
         <motion.div
-          className="container mx-auto px-4 text-center"
+          className="w-full px-4 text-center"
           variants={fadeUp}
           initial="hidden"
           animate="visible"
         >
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 drop-shadow-2xl">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-8 drop-shadow-2xl">
             Jasa Pembuatan Website Profesional Untuk Bisnis Yang Lebih Kredibel.
           </h1>
 
-          <h2 className="text-2xl md:text-3xl font-semibold mb-6 opacity-90">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-6 opacity-90">
             Kami bantu Anda naikan omset dan bangun website Bisnis Anda. Bukan cuma tampil — tapi <span className="text-blue-300">bekerja dan menghasilkan</span>.
           </h2>
 
-          <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+          <div className="flex flex-col justify-center items-center gap-4 px-4">
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}

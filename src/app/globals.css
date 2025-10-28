@@ -4,7 +4,24 @@
 @custom-variant dark (&:is(.dark *));
 
 body {
+  overflow-x: hidden;
   font-family: "Inter", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+}
+
+/* Prevent horizontal scroll gaps during animations */
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Ensure all sections don't cause horizontal overflow */
+section {
+  width: 100%;
+  overflow-x: hidden;
 }
 /* Di file CSS global atau di tag <style> */
 .background-texture-light {

@@ -1,3 +1,6 @@
-# TODO: Update Service Component Images
+# Mobile Responsiveness Fix for HeroContent
 
-- [x] Update image paths in src/components/Service.jsx from /SERVICE/ to /servicepage/
+## Tasks
+- [x] Adjust text sizes in HeroContent for better mobile scaling
+- [x] Improve button layout and spacing for mobile devices
+- [x] Test the changes on mobile view (server running on http://localhost:3001)

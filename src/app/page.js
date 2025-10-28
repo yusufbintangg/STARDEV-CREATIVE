@@ -1,6 +1,5 @@
 'use client';
 
-import { motion } from 'framer-motion';
 import { useState } from 'react';
 import LayananCard from '@/components/Service';
 import PricingSection from '@/components/PricingSection';
@@ -13,14 +12,11 @@ import WorkFlow from '@/components/WorkFlow';
 import AboutUs from '@/components/AboutUs';
 
 export default function WebsiteServiceLandingPage() {
-  // Animation variants
-  const fadeUp = {
-    hidden: { opacity: 0, y: 40 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
-  };
 
   return (
     <div className="min-h-screen ">
+      <body class="overflow-x-hidden">
+
       {/* Hero Section */}
       <section id="Home"
           className="relative h-[100vh] flex flex-col justify-center items-center text-center overflow-hidden"
@@ -28,55 +24,30 @@ export default function WebsiteServiceLandingPage() {
             <HeroContent/>
          </section>
       <section className="background w-full"
-                style={{ backgroundImage: 'url(/background/3d-background-with-white-cubes2.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
->
-        <motion.div
-          variants={fadeUp}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-        >
+                style={{ backgroundImage: 'url(/background/3d-background-with-white-cubes2.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <CallToAction/>
-        </motion.div>
       </section>
       {/* Services Section */}
-      <section id="layanan" 
+      <section id="layanan"
           className="width-full-bg"
-        style={{ backgroundImage: 'url(/background/3d-background-with-white-cubes.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
-          <motion.div
-            className="container mx-auto px-4"
-            variants={fadeUp}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}>
+        style={{ backgroundImage: 'url(/background/3d-background-with-white-cubes1.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+          <div className="container mx-auto px-4">
             <LayananCard id="layanan"/>
-          </motion.div>
+          </div>
       </section>
       {/* Pricing Page */}
-      <div className="py-6 my-8 mt-0 mb-0 width-full-bg bg-gray-200"
-              style={{ backgroundImage: 'url(/background/3d-background-with-white-cubes.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
-
+      <div className="py-6 my-8 mt-0 mb-0 width-full-bg bg-gray-200 relative overflow-x-hidden"
+        style={{ backgroundImage: 'url(/background/3d-background-with-white-cubes1.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
       <section id="pricing">
-        <motion.div
-          className="container mx-auto px-4 "
-          variants={fadeUp}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}>
+        <div className="container mx-auto px-4 ">
           <PricingSection />
-        </motion.div>
+        </div>
       </section>
             </div>
       {/* About Us Section */}
       <section className="w-full bg-primary py-6 mt-0 mb-0"
         style={{ backgroundImage: 'url(/background/3d-background-with-white-cubes1.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
-        <motion.div
-          variants={fadeUp}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}>
-          <AboutUs/>
-        </motion.div>
+        <AboutUs/>
       </section>
       <section id="Support"
         className="width-full-bg"
@@ -86,41 +57,25 @@ export default function WebsiteServiceLandingPage() {
       {/* Workflow Section */}
       <section className="w-full bg-primary py-6 mt-0 mb-0"
         style={{ backgroundImage: 'url(/background/3d-background-with-white-cubes1.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
-        <motion.div
-          variants={fadeUp}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}>
-          <WorkFlow/>
-        </motion.div>
+        <WorkFlow/>
       </section>
       {/* Portfolio Section */}
-      <section id="portfolio" 
+      <section id="portfolio"
       className=" text-white bg-primary"
-        style={{ backgroundImage: 'url(/background/3d-background-with-white-cubes.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
-        <motion.div
-          className="container mx-auto px-4 "
-          variants={fadeUp}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}>
+        style={{ backgroundImage: 'url(/background/3d-background-with-white-cubes1.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <div className="container mx-auto px-4 ">
           <PortfolioSection/>
-          </motion.div>
+        </div>
       </section>
       {/* Contact Section */}
       <section id="kontak"
         className="text-black width-full-bg "
         style={{ backgroundImage: 'url(/background/3d-background-with-white-cubes1.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
-        <motion.div
-          className="w-full"
-          variants={fadeUp}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-        >
+        <div className="w-full">
       <ContactSection/>
-      </motion.div>
+      </div>
       </section>
+      </body>
     </div>
   );
 }
