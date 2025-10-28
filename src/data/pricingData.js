@@ -147,7 +147,7 @@ export const pricingData = {
     ],
   },
 ],
-  "Tour & Travel Management System": [
+ "Tour & Travel Management System": [
     {
       id: 10,
       name: "Travel Starter Kit",
@@ -240,48 +240,48 @@ export const pricingData = {
         ],
       },
     ],
-  "Smart F&B System": [
-  {
-    id: 16,
-    name: "Digital Menu Basic",
-    price: "Mulai Rp 5.500.000",
-    description: "Paket dasar untuk usaha kuliner seperti restoran kecil, coffee shop, burjo, atau kedai yang ingin menggunakan menu digital berbasis QR.",
-    features: [
-      "Tampilan menu digital interaktif (QR Code per meja)",
-      "Kustomisasi menu & kategori",
-      "Dashboard untuk update menu & harga",
-      "Responsif untuk tablet & smartphone",
-      "Notifikasi pesanan ke dashboard admin/kasir"
-    ],
-  },
-  {
-    id: 17,
-    name: "Smart Ordering System",
-    price: "Mulai Rp 6.500.000+",
-    description: "Sistem pemesanan digital dengan integrasi pembayaran online dan manajemen pesanan dapur (KDS) untuk operasional yang lebih efisien.",
-    features: [
-      "Semua fitur Digital Menu Basic",
-      "Sistem checkout otomatis (QR/Online Payment)",
-      "Kitchen Display System (KDS) sederhana",
-      "Order status tracking (Diterima, Diproses, Siap)",
-      "Laporan penjualan harian",
-      "Dashboard kasir & manajemen meja"
-    ],
-  },
-  {
-    id: 18,
-    name: "Smart F&B Pro",
-    price: "Custom Quote (Nego)",
-    description: "Solusi digital terlengkap untuk bisnis kuliner skala besar seperti restoran franchise, cafe chain, atau cloud kitchen.",
-    features: [
-      "Semua fitur Smart Ordering System",
-      "Integrasi POS lengkap (kasir, pembayaran, laporan)",
-      "Manajemen stok & bahan baku (inventory)",
-      "Sistem diskon, promo, & paket menu",
-      "Integrasi dengan layanan delivery (opsional)",
-      "Dashboard analytics & laporan keuangan",
-      "Support & maintenance pasca implementasi"
-    ],
-  },
+"Smart F&B System": [
+    {
+      id: 16,
+      name: "Digital Menu Basic",
+      price: "Mulai Rp 5.500.000",
+      description: "Paket dasar untuk usaha kuliner seperti restoran kecil, coffee shop, burjo, atau kedai yang ingin menggunakan menu digital berbasis QR.",
+      features: [
+        "Tampilan menu digital interaktif (QR Code per meja)",
+        "Kustomisasi menu & kategori",
+        "Dashboard untuk update menu & harga",
+        "Responsif untuk tablet & smartphone",
+        "Notifikasi pesanan ke dashboard admin/kasir"
+      ],
+    },
+    {
+      id: 17,
+      name: "Smart Ordering System",
+      price: "Mulai Rp 6.500.000+",
+      description: "Sistem pemesanan digital dengan integrasi pembayaran online dan manajemen pesanan dapur (KDS) untuk operasional yang lebih efisien.",
+      features: [
+        "Semua fitur Digital Menu Basic",
+        "Sistem checkout otomatis (QR/Online Payment)",
+        "Kitchen Display System (KDS) sederhana",
+        "Order status tracking (Diterima, Diproses, Siap)",
+        "Laporan penjualan harian",
+        "Dashboard kasir & manajemen meja"
+      ],
+    },
+    {
+      id: 18,
+      name: "Smart F&B Pro",
+      price: "Custom Quote (Nego)",
+      description: "Solusi digital terlengkap untuk bisnis kuliner skala besar seperti restoran franchise, cafe chain, atau cloud kitchen.",
+      features: [
+        "Semua fitur Smart Ordering System",
+        "Integrasi POS lengkap (kasir, pembayaran, laporan)",
+        "Manajemen stok & bahan baku (inventory)",
+        "Sistem diskon, promo, & paket menu",
+        "Integrasi dengan layanan delivery (opsional)",
+        "Dashboard analytics & laporan keuangan",
+        "Support & maintenance pasca implementasi"
+      ],
+    },
   ],
 };
