@@ -48,7 +48,7 @@ export const pricingData = {
         "Pelatihan update konten (2 jam)", 
         "Gratis domain .com (1 tahun)", 
         "Support & maintenance 1 bulan",
-        "Gratis hosting 6 bulan"
+        "Gratis hosting 3 bulan"
       ],
     },
   ],
@@ -83,13 +83,13 @@ export const pricingData = {
         "Integrasi Live Chat",
         "Gratis domain .com (1 tahun)",
         "SEO on-page & optimasi Core Web Vitals",
-        "Gratis hosting 6 bulan"
+        "Gratis hosting 3 bulan"
       ],
     },
     {
       id: 6,
       name: "Premium Company Profile",
-      price: "Custom (Nego)",
+      price: "Rp 8.290.000",
       description: "Solusi branding lengkap, ideal untuk perusahaan yang butuh lead generation & presentasi kompleks.",
       features: [
         "Desain eksklusif & animasi modern",
@@ -97,10 +97,10 @@ export const pricingData = {
         "CMS terintegrasi (Blog & Berita)",
         "Landing Page terpisah untuk campaign",
         "Integrasi sistem Newsletter",
-        "Pelatihan update konten (4 jam)",
-        "Keamanan SSL + backup mingguan otomatis",
+        "Pelatihan update konten",
+        "Keamanan SSL",
         "Gratis domain .com (1 tahun)",
-        "Gratis Hosting 6 bulan"
+        "Gratis hosting 3 bulan"
       ],
     },
   ],
@@ -125,7 +125,7 @@ export const pricingData = {
     {
       id: 8,
       name: "Professional E-Commerce",
-      price: "Rp 8.490.000",
+      price: "Rp 8.490.000+",
       description: "Tingkatkan penjualan dengan sistem pembayaran otomatis & tampilan modern.",
       features: [
         "Desain modern & responsif",
@@ -136,7 +136,7 @@ export const pricingData = {
         "Halaman Home, Produk, Kategori, Blog, Tentang, Kontak",
         "Gratis domain .com (1 tahun)",
         "Optimasi SEO dasar",
-        "Gratis hosting 6 bulan"
+        "Gratis hosting 3 bulan"
       ],
     },
     {
@@ -155,7 +155,7 @@ export const pricingData = {
         "Integrasi Google Analytics & Meta Pixel",
         "Gratis domain .com (1 tahun)",
         "Support & maintenance 2 bulan",
-        "Gratis Hosting 6 bulan"
+        "Gratis hosting 3 bulan"
       ],
     },
   ],
@@ -174,13 +174,13 @@ export const pricingData = {
         "Halaman destinasi & galeri",
         "Blog sederhana untuk konten SEO",
         "Gratis domain .com (1 tahun)",
-        "Gratis hosting 6 bulan"
+        "Gratis hosting 3 bulan"
       ],
     },
     {
       id: 11,
       name: "Integrated Booking System",
-      price: "Rp 11.990.000",
+      price: "Rp 11.990.000+",
       description: "Solusi semi-otomatis untuk mengelola inventaris dan transaksi booking.",
       features: [
         "Manajemen Inventaris (alokasi seat/kamar per paket)",
@@ -191,7 +191,7 @@ export const pricingData = {
         "Dashboard Admin untuk booking, keuangan & laporan",
         "Notifikasi otomatis (email & WhatsApp)",
         "Pelatihan penggunaan sistem (4 jam)",
-        "Gratis Hosting 6 bulan"
+        "Gratis hosting 3 bulan"
       ],
     },
     {
@@ -209,7 +209,7 @@ export const pricingData = {
         "API integration ready",
         "Keamanan SSL + backup harian otomatis",
         "Support & maintenance 3 bulan",
-        "Gratis Hosting 6 bulan"
+        "Gratis hosting 3 bulan"
       ],
     },
   ],
@@ -233,7 +233,7 @@ export const pricingData = {
     {
       id: 14,
       name: "Hotel Booking System Pro",
-      price: "Rp 9.990.000",
+      price: "Rp 9.990.000+",
       description: "Sistem pemesanan online dengan integrasi pembayaran otomatis dan manajemen kamar real-time.",
       features: [
         "Semua fitur Basic Booking Catalog",
@@ -245,7 +245,7 @@ export const pricingData = {
         "Notifikasi otomatis (email konfirmasi & reminder)",
         "Gratis domain .com (1 tahun)",
         "Pelatihan & support 1 bulan",
-        "Gratis hosting 6 bulan"
+        "Gratis hosting 3 bulan"
       ],
     },
     {
@@ -263,7 +263,7 @@ export const pricingData = {
         "Laporan penjualan, okupansi & revenue management lengkap",
         "PMS (Property Management System) features",
         "Support & maintenance 2 bulan",
-        "Gratis Hosting 6 bulan"
+        "Gratis hosting 3 bulan"
       ],
     },
   ],
@@ -287,7 +287,7 @@ export const pricingData = {
     {
       id: 17,
       name: "Smart Ordering System",
-      price: "Rp 10.490.000",
+      price: "Rp 10.490.000+",
       description: "Sistem pemesanan digital dengan integrasi pembayaran online dan manajemen pesanan dapur (KDS) untuk operasional yang lebih efisien.",
       features: [
         "Semua fitur Digital Menu Basic",
@@ -298,7 +298,7 @@ export const pricingData = {
         "Dashboard kasir & manajemen meja",
         "Split bill & discount system",
         "Support multiple outlet (maks 5 cabang)",
-        "Gratis hosting 6 bulan"
+        "Gratis hosting 3 bulan"
       ],
     },
     {
@@ -317,7 +317,7 @@ export const pricingData = {
         "Customer loyalty program (point & rewards)",
         "Support unlimited outlet (franchise ready)",
         "Support & maintenance 3 bulan",
-        "Gratis Hosting 6 bulan"
+        "Gratis hosting 3 bulan"
       ],
     },
   ],

@@ -23,7 +23,7 @@ export default function HeroContent() {
         />
       </div>
        {/* Konten utama */}
-      <div className="relative z-10 flex items-center justify-center h-screen overflow-hidden">
+      <div className="relative w-[90%] z-10 flex items-center justify-center h-screen overflow-hidden">
         <motion.div
           className="w-full px-4 text-center"
           variants={fadeUp}
