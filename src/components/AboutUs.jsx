@@ -68,7 +68,7 @@ export default function AboutUs() {
           whileInView="visible"
           viewport={{ once: true }}
         >
-          StarDev Creative adalah agensi pengembangan website yang berfokus pada solusi digital yang efektif, strategis, dan berorientasi pada hasil.
+          StarDev Creative adalah Agency pengembangan website yang berfokus pada solusi digital yang efektif, strategis, dan berorientasi pada hasil.
           Kami membantu bisnis membangun kehadiran online yang profesional melalui website yang tidak hanya menarik secara visual,
           tetapi juga berfungsi optimal untuk mendukung pertumbuhan penjualan dan reputasi merek.
           <br /><br />

@@ -6,15 +6,10 @@ import { Button } from "@/components/ui/button";
 import PricingCard from "@/components/ui/PricingCard";
 
 export default function PricingSection() {
-  // Animation variants for fade in from sides
-  const fadeFromLeft = {
-    hidden: { opacity: 0, x: -30 },
-    visible: { opacity: 1, x: 0, transition: { duration: 0.8 } },
-  };
-
-  const fadeFromRight = {
-    hidden: { opacity: 0, x: 30 },
-    visible: { opacity: 1, x: 0, transition: { duration: 0.8 } },
+  // Animation variants for fade in from bottom
+  const fadeFromBottom = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
   };
 
   const categories = Object.keys(pricingData);
@@ -24,7 +19,7 @@ export default function PricingSection() {
     <section className="py-10 text-center mr-0 ml-0">
       <motion.h2
         className="text-6xl font-bold mb-10 text-black"
-        variants={fadeFromLeft}
+        variants={fadeFromBottom}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
@@ -33,7 +28,7 @@ export default function PricingSection() {
       </motion.h2>
       <motion.h3
         className="text-xl mb-4 text-black mb-10"
-        variants={fadeFromRight}
+        variants={fadeFromBottom}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
@@ -43,7 +38,7 @@ export default function PricingSection() {
       {/* Note */}
       <motion.div
         className="mt-8 px-4 max-w-4xl mx-auto mb-10 text-center"
-        variants={fadeFromLeft}
+        variants={fadeFromBottom}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
@@ -55,7 +50,7 @@ export default function PricingSection() {
       {/* Tabs */}
       <motion.div
         className="flex justify-center mb-8 flex-wrap grid-cols-3 gap-1"
-        variants={fadeFromRight}
+        variants={fadeFromBottom}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
@@ -79,21 +74,21 @@ export default function PricingSection() {
         ))}
       </motion.div>
 
-      {/* Cards */}  
-      <div className="relative grid grid-cols-1 md:grid-cols-3 gap-4 px-4 md:px-0 md:h-[800px]">
+      {/* Cards */}
+      <div className="relative grid grid-cols-1 md:grid-cols-3 gap-4 px-4 md:px-0 md:h-[800px] overflow-hidden">
 
         <AnimatePresence>
           {pricingData[activeCategory].map((pkg, index) => (
             <motion.div
               key={`${activeCategory}-${pkg.id}`}
-              variants={index % 2 === 0 ? fadeFromLeft : fadeFromRight}
+              variants={fadeFromBottom}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
               className="h-full"
             >
-              <PricingCard pkg={pkg} activeCategory={activeCategory} />
+              <PricingCard pkg={pkg} activeCategory={activeCategory} isMiddle={index === 1} />
             </motion.div>
           ))}
         </AnimatePresence>

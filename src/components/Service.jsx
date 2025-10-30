@@ -1,5 +1,5 @@
 "use client";
-import ServiceCard from "./ServiceCard";
+import ServiceCard from "./ui/ServiceCard";
 import { motion } from "framer-motion";
 
 export default function Service() {

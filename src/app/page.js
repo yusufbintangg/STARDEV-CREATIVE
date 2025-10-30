@@ -15,8 +15,6 @@ export default function WebsiteServiceLandingPage() {
 
   return (
     <div className="min-h-screen ">
-      <body class="overflow-x-hidden">
-
       {/* Hero Section */}
       <section id="Home"
           className="relative h-[100vh] flex flex-col justify-center items-center text-center overflow-hidden"
@@ -75,7 +73,6 @@ export default function WebsiteServiceLandingPage() {
       <ContactSection/>
       </div>
       </section>
-      </body>
     </div>
   );
 }

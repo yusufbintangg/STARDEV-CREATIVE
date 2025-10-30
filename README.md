@@ -62,6 +62,7 @@ Push your project to GitHub:
 git init
 git add .
 git commit -m "first commit"
+git push
 git branch -M main
 git remote add origin https://github.com/username/nama-project.git
 git push -u origin main
