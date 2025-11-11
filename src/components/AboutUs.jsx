@@ -81,7 +81,8 @@ export default function AboutUs() {
           {reasons.map((reason, i) => (
             <motion.div
               key={i}
-              className="bg-gray-50 p-8 rounded-2xl shadow-lx hover:shadow-md transition duration-300 flex flex-col hover:scale-105"
+              className="flex flex-col items-start text-white space-y-4 bg-white p-6 rounded-2xl border border-gray-100 shadow-xl hover:shadow-2xl transition duration-300 cursor-default
+              transition duration-300 flex flex-col hover:scale-105"
               variants={i % 2 === 0 ? fadeFromLeft : fadeFromRight}
               initial="hidden"
               whileInView="visible"
@@ -89,7 +90,7 @@ export default function AboutUs() {
               transition={{ delay: i * 0.1 }}
             >
               <div className="mb-4">{reason.icon}</div>
-              <h4 className="text-xl font-semibold mb-3">{reason.title}</h4>
+              <h4 className="text-xl font-semibold text-gray-800 mb-3">{reason.title}</h4>
               <p className="text-gray-600 leading-relaxed">{reason.desc}</p>
             </motion.div>
           ))}

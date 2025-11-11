@@ -76,8 +76,6 @@ export default function WorkFlow() {
             situs Anda tampil profesional dan efektif sejak hari pertama.
         </motion.p>
       </div>
-
-
       {/* Workflow Section */}
       <div className="max-w-7xl mx-auto px-6 pb-24">
 
@@ -85,8 +83,8 @@ export default function WorkFlow() {
           {steps.map((step, i) => (
             <motion.div
               key={i}
-              className="bg-gray-50 p-8 rounded-2xl shadow-lx hover:shadow-md transition duration-300 flex flex-col items-center text-center
-              hover:scale-105"
+              className="flex flex-col items-start text-white space-y-4 bg-white p-6 rounded-2xl border border-gray-100 shadow-xl hover:shadow-2xl transition duration-300 cursor-default
+              transition duration-300 flex flex-col hover:scale-105"
               variants={i % 2 === 0 ? fadeFromLeft : fadeFromRight}
               initial="hidden"
               whileInView="visible"
@@ -94,7 +92,7 @@ export default function WorkFlow() {
               transition={{ delay: i * 0.1 }}
             >
               <div className="mb-4">{step.icon}</div>
-              <h4 className="text-xl font-semibold mb-3">{step.title}</h4>
+              <h4 className="text-xl font-semibold text-gray-800 mb-3">{step.title}</h4>
               <p className="text-gray-600 leading-relaxed">{step.desc}</p>
             </motion.div>
           ))}

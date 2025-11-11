@@ -4,16 +4,16 @@ import styled from 'styled-components';
 const PricingCard = ({ pkg, activeCategory, isMiddle }) => {
   return (
     <StyledWrapper $isMiddle={isMiddle}>
-      <div className="plan">
+      <div className="plan h-full flex flex-col justify-between border-2">
         <div className="inner">
-          <span className="pricing">
+          <p className="text-3xl font-bold mb-2">{pkg.name}</p>
+          <span className="text-3xl font-bold text-blue-400 mb-4">
             <span>
               {pkg.price} <small></small>
             </span>
           </span>
-          <p className="title">{pkg.name}</p>
-          <p className="info">{pkg.description}</p>
-          <ul className="features">
+          <p className="text-sm text-black-400 mt-4">{pkg.description}</p>
+          <ul className="features mt-6 space-y-3">
             {pkg.features.map((f, idx) => (
               <li key={idx}>
                 <span className="icon">
@@ -66,25 +66,6 @@ const StyledWrapper = styled.div`
     position: relative;
   }
 
-  .plan .pricing {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: #0004ffff;
-    border-radius: 99em 0 0 99em;
-    display: flex;
-    align-items: center;
-    padding: 0.625em 0.75em;
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: rgba(255, 187, 0, 1);
-  }
-
-  .plan .pricing small {
-    color: #707a91;
-    font-size: 0.75em;
-    margin-left: 0.25em;
-  }
 
   .plan .title {
     margin-top: 1.5rem;
@@ -110,24 +91,22 @@ const StyledWrapper = styled.div`
     display: flex;
     align-items: center;
     gap: 1rem;
-    font-size: 1rem;
-    font-weight: 700;
+    font-size: small;
     color: #000000ff;
     text-align: left;
     padding-left: 0;
   }
 
   .plan .features li + * {
-    margin-top: 0.75rem;
+    margin-top: 0.1rem;
     
   }
 
   .plan .features .icon {
-    background-color: #003cffff;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    color: #7700ffff;
     border-radius: 50%;
   }
 
@@ -165,6 +144,7 @@ const StyledWrapper = styled.div`
 
   .plan .button:hover, .plan .button:focus {
     background-color: #4133B7;
+    transform: translateY(-4px);
   }
 `;
 
