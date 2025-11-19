@@ -14,42 +14,43 @@ export default function Service() {
     visible: { opacity: 1, x: 0, transition: { duration: 0.8 } },
   };
   const layananList = [
-    {
-      "title": "Creative Portfolio & Personal Branding",
-      "desc": "Galeri digital eksklusif untuk fotografer, desainer, atau freelancer. Tampilkan karya, case studies, testimoni, dan skill Anda dengan tata letak yang profesional.",
-      "img": "/servicepage/personalbrand.png",
-      "text": "Bangun Personal Branding yang kuat dan tarik klien potensial. Website dirancang loading cepat dan fokus pada visual untuk membuat karya Anda lebih menonjol."
-    },
-    {
-      "title": "Professional Company Profile (Website Korporat Profesional)",
-      "desc": "Website resmi untuk meningkatkan kredibilitas dan branding perusahaan. Menyajikan informasi Visi-Misi, Portofolio, dan layanan dengan desain premium.",
-      "img": "/servicepage/comprob.png",
-      "text": "Landasan digital yang kuat. Dilengkapi Formulir Kontak Terintegrasi dan desain responsif, memastikan citra perusahaan Anda terlihat meyakinkan di semua perangkat."
-    },
-    {
-      "title": "Hotel & Homestay (Sistem Pemesanan Online)",
-      "desc": "Website pemesanan hotel dan homestay lengkap dengan sistem booking online, integrasi WhatsApp & payment gateway, serta dashboard admin untuk kelola kamar, harga, dan reservasi.",
-      "img": "/servicepage/hotel-homestay.png",
-      "text": "Solusi ideal untuk pemilik hotel dan homestay yang ingin meningkatkan reservasi langsung tanpa komisi OTA. Desain profesional, mobile-friendly, dan mudah digunakan oleh tamu maupun pengelola."
-    },
-    {
-      "title": "Tour & Travel Management System (Sistem Manajemen Wisata)",
-      "desc": "Solusi terintegrasi yang dirancang khusus untuk membantu bisnis tour & travel dalam mengelola seluruh proses operasional — mulai dari pemesanan paket wisata, pengelolaan jadwal penerbangan dan hotel, data pelanggan, hingga pelaporan keuangan dan komisi agen secara otomatis dan akurat.",
-      "img": "/servicepage/travel.png",
-      "text": "Sistem terpadu ini memudahkan pengelolaan seluruh aktivitas agen perjalanan dalam satu platform. Mulai dari pembuatan dan pengaturan paket wisata, alokasi kursi penerbangan dan kamar hotel, manajemen pemesanan serta pembayaran pelanggan, hingga pembuatan laporan penjualan dan komisi agen secara real-time."
-      },
-    {
-      "title": "Furniture & Clothing E-Commerce Solution (Sistem Penjualan Online Produk Fisik)",
-      "desc": "Platform e-commerce khusus untuk bisnis furniture dan clothing dengan tampilan katalog profesional, sistem varian produk, dan integrasi pembayaran online.",
-      "img": "/servicepage/catalog-ecommerce.png",
-      "text": "Solusi ini dirancang untuk menampilkan katalog produk yang menarik dan mudah dijelajahi pelanggan. Setiap produk dapat memiliki varian ukuran, warna, dan stok tersinkron otomatis ke dashboard admin. Cocok untuk brand yang ingin meningkatkan penjualan online dengan tampilan modern dan pengalaman belanja yang lancar."
-    },
-    {
-      "title": "Smart F&B System (Sistem Digital Bisnis Makanan & Minuman)",
-      "desc": "Sistem digital terintegrasi untuk berbagai jenis bisnis F&B seperti restoran, coffee shop, burjo, bakery, catering, bar, hingga franchise kuliner. Dilengkapi dengan fitur scan QR menu, pemesanan otomatis, dan dashboard manajemen operasional.",
-      "img": "/servicepage/SmartRestoSystem.png",
-      "text": "Solusi all-in-one yang membantu bisnis makanan dan minuman beroperasi lebih efisien. Pelanggan dapat scan QR untuk melihat menu digital, melakukan pemesanan, dan membayar langsung tanpa antre. Semua pesanan otomatis terhubung ke dapur, kasir, dan dashboard admin untuk memudahkan pengelolaan harian hingga pelaporan penjualan."
-    },
+  {
+  title: "Creative Portfolio & Personal Branding",
+  desc: "Galeri digital untuk menampilkan karya, testimoni, dan profil Anda secara profesional.",
+  img: "/servicepage/personalbrand.png",
+  text: "Bangun personal branding yang kuat dengan website cepat, rapi, dan fokus pada visual."
+},
+{
+  title: "Professional company profile website",
+  desc: "Website resmi untuk meningkatkan citra dan kredibilitas bisnis Anda.",
+  img: "/servicepage/comprob.png",
+  text: "Desain premium, responsif, dan dilengkapi formulir kontak untuk tampilan perusahaan yang lebih profesional."
+},
+{
+  title: "Hotel & Homestay – Sistem Booking Online",
+  desc: "Website dengan fitur booking, WhatsApp, payment gateway, dan dashboard manajemen.",
+  img: "/servicepage/hotel-homestay.png",
+  text: "Solusi lengkap untuk meningkatkan reservasi langsung tanpa komisi OTA."
+},
+{
+  title: "Tour & Travel Management System",
+  desc: "Sistem untuk mengelola paket wisata, jadwal, pelanggan, hingga laporan keuangan.",
+  img: "/servicepage/travel.png",
+  text: "Platform all-in-one untuk operasional tour & travel yang otomatis dan efisien."
+},
+{
+  title: "Furniture & Clothing E-Commerce",
+  desc: "E-commerce khusus untuk produk fisik lengkap dengan varian, katalog profesional, dan pembayaran online.",
+  img: "/servicepage/catalog-ecommerce.png",
+  text: "Tampilkan produk dengan rapi, kelola stok otomatis, dan tingkatkan penjualan online."
+},
+{
+  title: "Smart F&B System Pemesanan Online",
+  desc: "Sistem digital untuk restoran, cafe, burjo, bakery, catering, dan bisnis kuliner lainnya.",
+  img: "/servicepage/SmartRestoSystem.png",
+  text: "Menu QR, pemesanan otomatis, pembayaran digital, dan dashboard manajemen dalam satu sistem."
+}
+
   ];
 
 
@@ -75,7 +76,7 @@ export default function Service() {
             Kami menyediakan berbagai paket layanan pembuatan website sesuai dengan kebutuhan bisnis Anda. Dengan harga terjangkau dan kualitas premium. Dipercaya oleh lebih dari 100+ klien di seluruh Indonesia. Dapatkan penawaran terbaik hari ini juga!
           </p>
         </motion.div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-1">
           {layananList.map((item, i) => (
             <motion.div
               className="h-full"
